@@ -37,6 +37,12 @@ nav li{
 	border-radius: 50%;
 	border: 2px solid silver;
 }
+@media(max-width:800px){
+	nav {
+		height: 150px;
+		font-size: 1.6rem;
+	}
+}
 @media (max-width : 660px){
 	 nav p {
 		 margin-top: 20%;
@@ -83,9 +89,9 @@ nav li{
 }
 .cont-txt{
 	flex-grow: inherit;
-	font-size: 1.1rem;
+	font-size: 1.5rem;
 	width: 50%;
-	font-family: cursive;
+	font-family: inherit;
 
 }
 .inter{
@@ -138,12 +144,7 @@ h2{
 	transition: all 0.7s;
 	box-shadow: 3px 3px 9px white;
 }
-.project:hover p{
-	display: block;
-	font-weight: 600;
-	font-size: large;
-	color: white;
-}
+
 .project a{
 	color: black;
 	text-decoration: none;
@@ -152,7 +153,10 @@ h2{
 	width: 100%;
 }
 .project p{
-	display: none
+	display: block;
+	font-weight: 600;
+	font-size: large;
+	color: white;
 }
 @media (max-width : 1000px){
 	.projects-container{
