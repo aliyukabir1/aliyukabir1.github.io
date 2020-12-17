@@ -3,26 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Aliyu Kabir Portfoilio Site</title>
   <link rel="stylesheet" href="portfolio.css">
   <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
 </head>
 <body>
-  <nav>
-    <div class="about left"> 
-        <img src="img.jpg" alt="">
-        <a href="nav">
-          <p>Aliyu Kabir</p>
-        </a>
-        </div>
-    <div class="right">
-      <ul>
-        
-        <a href="#contact-section"><li>Contact ME <i class="fa fa-phone-square" aria-hidden="false"></i></li></a>
-        <a href="#projects"><li>Projects</li></a>
-      </ul>
-    </div>
-  </nav>
+
+  <div class="topnav" id="myTopnav">
+    <a href="#home" class="active">Home</a>
+    <a href="#skill-container">My Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact-section">Contact Me</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
 
   <div class="partial-intro">
     <h1>Hi am Aliyu Kabir</h1>
@@ -43,7 +38,7 @@
     </div>
   </div>
 
-  <div class="skill-container">
+  <div class="skill-container" id="skill-container">
     <h2>My Skills</h2>
     <p class="inter">These are some of my skills</p>
     <div class="skills">
@@ -197,7 +192,16 @@
  
 </div>
 
-
+<script>
+   function myFunction() {
+	var x = document.getElementById("myTopnav");
+	if (x.className === "topnav") {
+	  x.className += " responsive";
+	} else {
+	  x.className = "topnav";
+  }
+}
+</script>
 
 
 </body>
