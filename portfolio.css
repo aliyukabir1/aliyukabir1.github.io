@@ -41,6 +41,9 @@ text-decoration: underline;
   }
 
   @media screen and (max-width: 600px) {
+	  .topnav{
+		  display: block;
+	  }
 	.topnav.responsive {position: relative;}
 	.topnav.responsive a.icon {
 	  position: absolute;
