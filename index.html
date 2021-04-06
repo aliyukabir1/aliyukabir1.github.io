@@ -21,7 +21,7 @@
 
   <div class="partial-intro">
     <div>
-    <h1>Hi am Aliyu Kabir</h1>
+    <h1 id='type-writer'></h1>
     <h2>I am a front End Web Developer</h2>
     <P>Experienced in Html Css and Javascript</P>
   </div>
@@ -215,6 +215,25 @@
 	  x.className = "topnav";
   }
 }
+
+let i = 0
+let text = "Hi, I'm Aliyu Kabir"
+let speed = 200;
+
+function typeWriter(){
+  if(i<text.length){
+    document.getElementById('type-writer').innerHTML+=text.charAt(i)
+    i++;
+    setTimeout(typeWriter,speed)
+  }
+   else if(i == text.length){
+    
+    document.getElementById('type-writer').innerHTML = ''
+    i = 0
+    setInterval(typeWriter(),20000);
+   }
+}
+typeWriter()
 </script>
 
 
